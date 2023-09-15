@@ -1,4 +1,11 @@
-.v-container .image-container {   
+.v-container{
+    margin: auto;
+    padding: 3rem;
+  
+}
+
+.image-container {  
+   margin: auto;
     border: 8px solid rgb(232 232 232 / 93%);
 }
 
@@ -47,6 +54,20 @@
 
 }
 
-.icon .primaryText{
+.accordionButton .primaryText{
     font-style: 1.1rem;
+}
+
+
+@media (max-width: 1024px){
+    .v-container {
+        flex-direction: column;
+    }
+
+}
+@media (max-width: 768px)
+{
+   .accordionButton .primaryText {
+    font-size: 0.8rem;
+   }
 }
