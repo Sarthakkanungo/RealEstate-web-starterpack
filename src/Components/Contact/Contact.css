@@ -6,116 +6,86 @@
   align-items: center;
 }
 
-.c-container>div{
-    flex: 1;
+.c-container > div {
+  flex: 1;
 }
 
+.c-right {
+  width: 100%;
+}
 
 .c-left {
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-} 
+  gap: 0.5rem;
+}
 
-/* .row {
+.contactModes {
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.contactModes .row {
+  gap: 1.5rem;
+}
+
+.mode {
+  transition: all 300ms ease-in;
+  width: 16rem;
+  padding: 1rem;
+  border: 0.8px solid rgba(128, 128, 128 , 0.143);
+  gap: 1rem;
+  border-radius: 5px;
+}
+
+.mode .button{
+  width: 100%;
+  background: var(--lightBlue);
+  color: var(--blue);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.mode >:nth-child(1) {
+  width: 100%;
+  gap: 1.6rem;
+}
+
+.mode .detail .primaryText{
+  font-size: 1.1rem;
+  font-weight: 600;
+
+
+}
+
+
+.mode:hover{
+ scale: 1.1;
+ box-shadow: var(--shadow);
+
+}
+
+.mode .button:hover{
+  background: var(--blue-gradient);
+  color: white;
+  scale: 0.8;
+}
+
+@media (max-width:1024px){
+  .c-container{
+    flex-direction: column;
+  }
+  .contactModes{
     width: 100%;
-    
-    margin-top: 1rem;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    gap: 2rem;
-  
-}
-.field1{
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-}
-
-
-.box1 {
-    display: flex;
+  }
+  .row{
     flex-direction: column;
-    margin-bottom: 2rem;
-    padding: 2rem;
-    box-shadow: 1px 3px 2px 1px;
-    gap: 1rem 1.5rem;
+    width: 100%;
+  }
+  .mode{
+    width: 100%;
+  }
+  .c-right>div {
+    margin: auto;
   }
   
-  .icon {
-    width: 3rem;
-    display: flex;
-    align-items: center;
-  }
-  
-  .icon-style {
-    width: 2rem;
-    height: 1rem;
-  }
-  
-  .text {
-    flex: 1; /* Allow the text to take up remaining space */
-  }
-  
-  button {
-    width: 100%; /* Button takes full width */
-  }
-  
-  /* Add any other styles you need */
-  
-
-
-
-/* .box1 {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center; /* Vertically align the icon and span 
-    margin-bottom: 2rem;
-    padding: 2rem;
-    box-shadow: 1px 3px 2px 1px;
-    gap: 1rem 1.5rem;
-  }
-  
-  .icon {
-    width: 3rem;
-    display: flex;
-    align-items: center; /* Vertically align the icon within the icon container 
-  }
-  
-  .icon-style {
-    width: 2rem;
-    height: 1rem;
-  }
-  
-  .box-detail {
-    flex: 1; /* Allow the span and button to take up remaining space 
-  }
-   
-  /* Add any other styles you need */
-  
-/* .box1{
-
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    margin-bottom: 2rem;
-    padding: 2rem;
-    /* border: 2px solid rgba(234,240,165, 0.34); 
-    box-shadow: 1px 3px 2px 1px;
-    gap: 1rem 1.5rem;
 
 }
-.icon{
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    margin-top: 1rem;
-    width: 3rem;
-}
-.icon-style{
-    width: 2rem;
-    height: 1rem;
-}
-
- */ */
