@@ -82,7 +82,7 @@ a {
   font-weight: 600;
 }
 
-button{
+.button{
  background: var(--blue-gradient);
  padding: 0.6rem 1.4rem;
  color: white;
@@ -93,7 +93,7 @@ button{
 }
 
 
-button:hover{
+.button:hover{
   cursor: pointer;
   transform: scale(1.1);
 }
